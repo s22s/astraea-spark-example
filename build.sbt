@@ -17,6 +17,8 @@ libraryDependencies ++= Seq(
 initialCommands in console := """
 import org.apache.spark._
 import org.apache.spark.sql._
+import org.apache.spark.sql.functions._
+import org.apache.spark.ml._
 
 val spark = SparkSession
   .builder()
